@@ -11,7 +11,7 @@
 	<groupId>com.tinashe</groupId>
 	<artifactId>voters_roll</artifactId>
 	<version>1.0</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>voters_roll</name>
 	<description>voters roll system</description>
 	<properties>
