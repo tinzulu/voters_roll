@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.msu.voters_roll.dto.VoterRequest;
+import com.msu.voters_roll.exception.VoterNotFoundException;
 import com.msu.voters_roll.model.Voter;
 import com.msu.voters_roll.repository.VotersRepository;
 
@@ -34,7 +35,8 @@ public class VotersService {
 	}
 	
 	public Voter getVoterBySurnameAndId(VoterRequest request) {
-		return votersRepo.findByNationalIdAndSurname(request.getNationalId(), request.getSurname());
+		return votersRepo.getVoterwithIDandSurname(request.getNationalId(), request.getSurname())
+				.orElseThrow(()-> new VoterNotFoundException("Voter with national"+request.getNationalId()+" and surname "+request.getSurname()+" not found"));
 	}
 	
 	
