@@ -1,13 +1,13 @@
-package com.msu.voters_roll.service;
+package com.msu.votersroll.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.msu.voters_roll.dto.VoterRequest;
-import com.msu.voters_roll.exception.VoterNotFoundException;
-import com.msu.voters_roll.model.Voter;
-import com.msu.voters_roll.repository.VotersRepository;
+import com.msu.votersroll.dto.VoterRequest;
+import com.msu.votersroll.exception.VoterNotFoundException;
+import com.msu.votersroll.model.Voter;
+import com.msu.votersroll.repository.VotersRepository;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

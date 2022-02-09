@@ -1,4 +1,4 @@
-package com.msu.voters_roll.dto;
+package com.msu.votersroll.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

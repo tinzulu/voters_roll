@@ -1,4 +1,4 @@
-package com.msu.voters_roll.api;
+package com.msu.votersroll.api;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.msu.voters_roll.dto.VoterRequest;
-import com.msu.voters_roll.model.Voter;
-import com.msu.voters_roll.service.VotersService;
+import com.msu.votersroll.dto.VoterRequest;
+import com.msu.votersroll.model.Voter;
+import com.msu.votersroll.service.VotersService;
 
 import lombok.AllArgsConstructor;
 

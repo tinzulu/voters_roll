@@ -1,4 +1,4 @@
-package com.msu.voters_roll;
+package com.msu.votersroll;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

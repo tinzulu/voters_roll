@@ -1,4 +1,4 @@
-package com.msu.voters_roll.model;
+package com.msu.votersroll.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

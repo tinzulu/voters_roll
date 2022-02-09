@@ -1,4 +1,4 @@
-package com.msu.voters_roll.exception;
+package com.msu.votersroll.exception;
 
 public class VoterNotFoundException extends RuntimeException{
 	private static final long serialVersionUID = 1L;

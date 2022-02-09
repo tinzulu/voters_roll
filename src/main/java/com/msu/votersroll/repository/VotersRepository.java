@@ -1,4 +1,4 @@
-package com.msu.voters_roll.repository;
+package com.msu.votersroll.repository;
 
 import java.util.Optional;
 
@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.msu.voters_roll.model.Voter;
+import com.msu.votersroll.model.Voter;
 
 public interface VotersRepository extends JpaRepository<Voter, Integer>{
 	
