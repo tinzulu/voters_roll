@@ -20,14 +20,15 @@ public class VotersService {
 	
 	public Voter save(Voter voter) {
 		int num = votersRepo.exitsByNationalid(voter.getNationalId());
-		
+		String s = Integer.toString(num);
+		log.debug(s);
 		if(num >= 1) {
 			log.warn("Duplicate national id "+voter.getNationalId());
 		} else {
 			Voter newVoter = votersRepo.save(voter);
 			return newVoter;
 		}
-		return voter;
+		return null;
 	}
 	
 	public List<Voter> getVoters(){
@@ -38,8 +39,5 @@ public class VotersService {
 		return votersRepo.getVoterwithIDandSurname(request.getNationalId(), request.getSurname())
 				.orElseThrow(()-> new VoterNotFoundException("Voter with national"+request.getNationalId()+" and surname "+request.getSurname()+" not found"));
 	}
-	
-	
-	
-	
+		
 }

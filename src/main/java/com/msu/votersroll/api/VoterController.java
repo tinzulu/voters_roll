@@ -23,7 +23,7 @@ public class VoterController {
 	private final VotersService voterService;
 	
 	@PostMapping
-	public ResponseEntity<?> save(Voter voter){
+	public ResponseEntity<?> save(@RequestBody Voter voter){
 		Voter newVoter = voterService.save(voter);
 		return ResponseEntity.status(HttpStatus.CREATED)
 				.body(newVoter);
